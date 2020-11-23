@@ -15,7 +15,7 @@
 
 - Let's consider a trivial example in JavaScript using `superstruct` along with `crocks`:
 
-  > Even if you know shit about those libraries, should be easy enough to read and understand
+  > Even if you know shit about those libraries (like me when first writing this doc), should be easy enough to read and understand.
 
   ```js
   const Pokemanz = object({
@@ -60,17 +60,25 @@
 
 - Feels a bit like a `XOR` operation.
 
-
-### Waypoint TL;DR
-
-- At a basic level, ADT's are about mixing ANDs and OR's/XOR's
+- Conceptually the `Either` type can hold a `Left` and `Right` value, but never both at the same time. We can put any data we want in said type, but only in one of those two slots.
 
 
+### Final thoughts
 
+- Learning functional programming is hard.
 
+- At a basic level, ADT's are about mixing ANDs and OR's/XOR's.
+
+- Algebraic Structures are a bit like code design patterns, but with a mathematical basis.
+
+- Type classes are a way of implementing polymorphism.
+
+- Algebraic data types are not the same as algebraic structures.
+  - They are composite data types made of other types, classified as `Sum` and `Product` types.
+  - Together, they’re like a dynamic duo for encoding business logic.
 
 
 
 Sources:
  - [Functional Mumbo Jumbo - ADTs](http://blog.jenkster.com/2016/06/functional-mumbo-jumbo-adts.html)
- - [ALGEBRAIC DATA TYPES: THINGS I WISH SOMEONE HAD EXPLAINED ABOUT FUNCTIONAL PROGRAMMING](https://jrsinclair.com/articles/2019/algebraic-data-types-what-i-wish-someone-had-explained-about-functional-programming/)
+ - [Algebraic Data types: Things I wish someone had explained about Functional Programming](https://jrsinclair.com/articles/2019/algebraic-data-types-what-i-wish-someone-had-explained-about-functional-programming/)
